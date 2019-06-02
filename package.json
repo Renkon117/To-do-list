@@ -1,0 +1,22 @@
+{
+  "name": "to_do_list",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Renkon117/To-do-list.git"
+  },
+  "author": "Renkon117",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Renkon117/To-do-list/issues"
+  },
+  "homepage": "https://github.com/Renkon117/To-do-list#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
