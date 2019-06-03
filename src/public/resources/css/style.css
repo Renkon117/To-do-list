@@ -4,6 +4,15 @@ body{
   background:#edf0f1;
   padding:80px 0 0 0;
 }
+/*in order to change the full format website by using box-sizing: boder-box;
+so that the right part of site is not cut*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body, input, button {
   font-family: 'Roboto', sans-serif;
@@ -14,13 +23,14 @@ body, input, button {
 }
 
 header{
-  width:90%;
-  height:50px;
+  width:100%;
+  height:80px;
   position:fixed;
   padding:15px;
   top:0;
   left:0;
   z-index:5;
+
   background:#25b99a;
   box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
   border-bottom-right-radius:10px;
@@ -28,14 +38,9 @@ header{
 }
 
 header input {
-  width:70%;
+  width:100%;
   height:50px;
-
-  position:absolute;
-  top:15px;
-  right:30px;
-  left:10px;
-  z-index:2;
+  float:left;
   color:#fff;
   font-size:15px;
   font-weight:400px;
@@ -44,8 +49,8 @@ header input {
   background: rgba(255, 255, 255, 0.2);
   border-top-left-radius:5px;
   border-bottom-left-radius:5px;
-  border-top-right-radius:50px;
-  border-bottom-right-radius:50px;
+  border-top-right-radius:25px;
+  border-bottom-right-radius:25px;
   border:0px;
   box-shadow:none;
   outline:none;
@@ -78,7 +83,7 @@ header button{
   height:50px;
   position:absolute;
   top:15px;
-  right:30px;
+  right:15px;
   z-index:2;
   border-radius:25px;
   background:#fff;
@@ -110,23 +115,25 @@ header button svg .fill{
 .container {
   width:100%;
   float:left;
+  padding:15px;
 }
 
 ul.todo{
-  width:80%;
+  width:100%;
   float:left;
   padding-inline-start:0;
   padding-left:10px;
 }
 
 ul.todo li{
-  width:85%;
-  min-height:35px;
+  width:100%;
+  min-height:50px;
   float:left;
   font-size:14px;
   font-weight:500;
   color:#444;
   line-height:22px;
+
   background:#fff;
   border-radius:5px;
   position:relative;
