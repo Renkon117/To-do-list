@@ -7,3 +7,6 @@ CREATE TABLE tasks (
     created DATETIME NOT NULL DEFAULT NOW(),
     last_updated DATETIME NOT NULL DEFAULT NOW() ON UPDATE NOW()
 );
+
+//USE todo; in order to start the database and You can do 
+//SELECT * from tasks;
