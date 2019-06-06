@@ -87,6 +87,6 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-.env
+.env/
 
 *node_modules/
