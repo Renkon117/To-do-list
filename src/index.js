@@ -63,3 +63,11 @@ try {
       res.json({});
     });
   });
+
+
+  const PORT = process.env.PORT || 3000
+
+// localhost:PORT
+app.listen(PORT, () => {
+  console.log("Server is up and listening on: " + PORT)
+})
