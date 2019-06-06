@@ -21,7 +21,7 @@ try {
   api.use(express.static(__dirname + '/public'));
   api.use(bodyParser.json());
   
-  api.listen(3000, () => {
+  api.listen(PORT, () => {
     console.log('API up and running!');
   });
   
