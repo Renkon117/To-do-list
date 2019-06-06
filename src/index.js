@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const mysql =require("mysql2");
 require('dotenv').config();
 
+const PORT = process.env.PORT || 3000
+
 const connection = mysql.createConnection({
     host:process.env.DB_HOST,
     user:process.env.DB_USER,
@@ -65,7 +67,7 @@ try {
   });
 
 
-  const PORT = process.env.PORT || 3000
+
 
 // localhost:PORT
 app.listen(PORT, () => {
