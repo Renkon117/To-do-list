@@ -68,8 +68,3 @@ try {
 
 
 
-
-// localhost:PORT
-app.listen(PORT, () => {
-  console.log("Server is up and listening on: " + PORT)
-})
