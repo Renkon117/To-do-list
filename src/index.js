@@ -26,7 +26,7 @@ try {
   
 
   const PORT = process.env.PORT || 3000
-  api.listen(3000, () => {
+  api.listen(PORT, () => {
     console.log('API up and running!');
   });
   

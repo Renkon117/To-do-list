@@ -19,11 +19,11 @@
   "homepage": "https://github.com/Renkon117/To-do-list#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "buffer-alloc-unsafe": "^1.1.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "mysql2": "^1.6.5"
   },
-
   "engines": {
     "node": "v4.1.X",
     "npm": "2.14.X"
