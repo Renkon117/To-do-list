@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const mysql =require("mysql2");
 require('dotenv').config();
 
-const PORT = process.env.PORT || 3000
+
 
 const connection = mysql.createConnection({
     host:process.env.DB_HOST,
@@ -20,10 +20,13 @@ try {
   }
   
   const api = express();
-  api.use(express.static(__dirname + './public'));
+  //there is no "." for public
+  api.use(express.static(__dirname + '/public'));
   api.use(bodyParser.json());
   
-  api.listen(PORT, () => {
+
+  const PORT = process.env.PORT || 3000
+  api.listen(3000, () => {
     console.log('API up and running!');
   });
   
