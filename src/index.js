@@ -20,7 +20,7 @@ try {
   }
   
   const api = express();
-  api.use(express.static(__dirname + '/public'));
+  api.use(express.static(__dirname + './public'));
   api.use(bodyParser.json());
   
   api.listen(PORT, () => {

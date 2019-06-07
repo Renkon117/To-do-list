@@ -45,9 +45,9 @@ function addItem (value) {
 }
 
 
-//remain data when the user came back to the website
+// remain data when the user came back to the website
 // function dataObjectUpdated(){
-//   localStorage.setItem("todoList", JSON.stringify(data));
+// localStorage.setItem("todoList", JSON.stringify(data));
 // }
 
 function removeItem() {
